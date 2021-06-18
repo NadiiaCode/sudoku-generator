@@ -1,0 +1,225 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Pangolin&display=swap" rel="stylesheet">
+    <script src="./3.js"></script>
+    <script src="./2.js"></script>
+    <script src="./1.js"></script>
+</head>
+
+<body>
+    <div id="container">
+        <div id="cell-holder">
+            <div class="button" onclick="easy();">Easy</div>
+            <div class="button" onclick="medium();">Medium</div>
+            <div class="button" onclick="hard();">Hard</div>
+            <br>
+            <input id="cell-0" class="cell" type="number" maxlength=1 max=9 min=1 onchange="validate_cells();">
+            <input id="cell-1" class="cell" type="number" maxlength=1 max=9 min=1 onchange="validate_cells();">
+            <input id="cell-2" class="cell" type="number" maxlength=1 max=9 min=1 onchange="validate_cells();">
+            <input id="cell-3" class="cell" type="number" maxlength=1 max=9 min=1 onchange="validate_cells();">
+            <input id="cell-4" class="cell" type="number" maxlength=1 max=9 min=1 onchange="validate_cells();">
+            <input id="cell-5" class="cell" type="number" maxlength=1 max=9 min=1 onchange="validate_cells();">
+            <input id="cell-6" class="cell" type="number" maxlength=1 max=9 min=1 onchange="validate_cells();">
+            <input id="cell-7" class="cell" type="number" maxlength=1 max=9 min=1 onchange="validate_cells();">
+            <input id="cell-8" class="cell" type="number" maxlength=1 max=9 min=1 onchange="validate_cells();">
+            <br>
+            <input id="cell-9" class="cell" type="number" maxlength=1 max=9 min=1 onchange="validate_cells();">
+            <input id="cell-10" class="cell" type="number" maxlength=1 max=9 min=1 onchange="validate_cells();">
+            <input id="cell-11" class="cell" type="number" maxlength=1 max=9 min=1 onchange="validate_cells();">
+            <input id="cell-12" class="cell" type="number" maxlength=1 max=9 min=1 onchange="validate_cells();">
+            <input id="cell-13" class="cell" type="number" maxlength=1 max=9 min=1 onchange="validate_cells();">
+            <input id="cell-14" class="cell" type="number" maxlength=1 max=9 min=1 onchange="validate_cells();">
+            <input id="cell-15" class="cell" type="number" maxlength=1 max=9 min=1 onchange="validate_cells();">
+            <input id="cell-16" class="cell" type="number" maxlength=1 max=9 min=1 onchange="validate_cells();">
+            <input id="cell-17" class="cell" type="number" maxlength=1 max=9 min=1 onchange="validate_cells();">
+            <br>
+            <input id="cell-18" class="cell" type="number" maxlength=1 max=9 min=1 onchange="validate_cells();">
+            <input id="cell-19" class="cell" type="number" maxlength=1 max=9 min=1 onchange="validate_cells();">
+            <input id="cell-20" class="cell" type="number" maxlength=1 max=9 min=1 onchange="validate_cells();">
+            <input id="cell-21" class="cell" type="number" maxlength=1 max=9 min=1 onchange="validate_cells();">
+            <input id="cell-22" class="cell" type="number" maxlength=1 max=9 min=1 onchange="validate_cells();">
+            <input id="cell-23" class="cell" type="number" maxlength=1 max=9 min=1 onchange="validate_cells();">
+            <input id="cell-24" class="cell" type="number" maxlength=1 max=9 min=1 onchange="validate_cells();">
+            <input id="cell-25" class="cell" type="number" maxlength=1 max=9 min=1 onchange="validate_cells();">
+            <input id="cell-26" class="cell" type="number" maxlength=1 max=9 min=1 onchange="validate_cells();">
+            <br>
+            <input id="cell-27" class="cell" type="number" maxlength=1 max=9 min=1 onchange="validate_cells();">
+            <input id="cell-28" class="cell" type="number" maxlength=1 max=9 min=1 onchange="validate_cells();">
+            <input id="cell-29" class="cell" type="number" maxlength=1 max=9 min=1 onchange="validate_cells();">
+            <input id="cell-30" class="cell" type="number" maxlength=1 max=9 min=1 onchange="validate_cells();">
+            <input id="cell-31" class="cell" type="number" maxlength=1 max=9 min=1 onchange="validate_cells();">
+            <input id="cell-32" class="cell" type="number" maxlength=1 max=9 min=1 onchange="validate_cells();">
+            <input id="cell-33" class="cell" type="number" maxlength=1 max=9 min=1 onchange="validate_cells();">
+            <input id="cell-34" class="cell" type="number" maxlength=1 max=9 min=1 onchange="validate_cells();">
+            <input id="cell-35" class="cell" type="number" maxlength=1 max=9 min=1 onchange="validate_cells();">
+            <br>
+            <input id="cell-36" class="cell" type="number" maxlength=1 max=9 min=1 onchange="validate_cells();">
+            <input id="cell-37" class="cell" type="number" maxlength=1 max=9 min=1 onchange="validate_cells();">
+            <input id="cell-38" class="cell" type="number" maxlength=1 max=9 min=1 onchange="validate_cells();">
+            <input id="cell-39" class="cell" type="number" maxlength=1 max=9 min=1 onchange="validate_cells();">
+            <input id="cell-40" class="cell" type="number" maxlength=1 max=9 min=1 onchange="validate_cells();">
+            <input id="cell-41" class="cell" type="number" maxlength=1 max=9 min=1 onchange="validate_cells();">
+            <input id="cell-42" class="cell" type="number" maxlength=1 max=9 min=1 onchange="validate_cells();">
+            <input id="cell-43" class="cell" type="number" maxlength=1 max=9 min=1 onchange="validate_cells();">
+            <input id="cell-44" class="cell" type="number" maxlength=1 max=9 min=1 onchange="validate_cells();">
+            <br>
+            <input id="cell-45" class="cell" type="number" maxlength=1 max=9 min=1 onchange="validate_cells();">
+            <input id="cell-46" class="cell" type="number" maxlength=1 max=9 min=1 onchange="validate_cells();">
+            <input id="cell-47" class="cell" type="number" maxlength=1 max=9 min=1 onchange="validate_cells();">
+            <input id="cell-48" class="cell" type="number" maxlength=1 max=9 min=1 onchange="validate_cells();">
+            <input id="cell-49" class="cell" type="number" maxlength=1 max=9 min=1 onchange="validate_cells();">
+            <input id="cell-50" class="cell" type="number" maxlength=1 max=9 min=1 onchange="validate_cells();">
+            <input id="cell-51" class="cell" type="number" maxlength=1 max=9 min=1 onchange="validate_cells();">
+            <input id="cell-52" class="cell" type="number" maxlength=1 max=9 min=1 onchange="validate_cells();">
+            <input id="cell-53" class="cell" type="number" maxlength=1 max=9 min=1 onchange="validate_cells();">
+            <br>
+            <input id="cell-54" class="cell" type="number" maxlength=1 max=9 min=1 onchange="validate_cells();">
+            <input id="cell-55" class="cell" type="number" maxlength=1 max=9 min=1 onchange="validate_cells();">
+            <input id="cell-56" class="cell" type="number" maxlength=1 max=9 min=1 onchange="validate_cells();">
+            <input id="cell-57" class="cell" type="number" maxlength=1 max=9 min=1 onchange="validate_cells();">
+            <input id="cell-58" class="cell" type="number" maxlength=1 max=9 min=1 onchange="validate_cells();">
+            <input id="cell-59" class="cell" type="number" maxlength=1 max=9 min=1 onchange="validate_cells();">
+            <input id="cell-60" class="cell" type="number" maxlength=1 max=9 min=1 onchange="validate_cells();">
+            <input id="cell-61" class="cell" type="number" maxlength=1 max=9 min=1 onchange="validate_cells();">
+            <input id="cell-62" class="cell" type="number" maxlength=1 max=9 min=1 onchange="validate_cells();">
+            <br>
+            <input id="cell-63" class="cell" type="number" maxlength=1 max=9 min=1 onchange="validate_cells();">
+            <input id="cell-64" class="cell" type="number" maxlength=1 max=9 min=1 onchange="validate_cells();">
+            <input id="cell-65" class="cell" type="number" maxlength=1 max=9 min=1 onchange="validate_cells();">
+            <input id="cell-66" class="cell" type="number" maxlength=1 max=9 min=1 onchange="validate_cells();">
+            <input id="cell-67" class="cell" type="number" maxlength=1 max=9 min=1 onchange="validate_cells();">
+            <input id="cell-68" class="cell" type="number" maxlength=1 max=9 min=1 onchange="validate_cells();">
+            <input id="cell-69" class="cell" type="number" maxlength=1 max=9 min=1 onchange="validate_cells();">
+            <input id="cell-70" class="cell" type="number" maxlength=1 max=9 min=1 onchange="validate_cells();">
+            <input id="cell-71" class="cell" type="number" maxlength=1 max=9 min=1 onchange="validate_cells();">
+            <br>
+            <input id="cell-72" class="cell" type="number" maxlength=1 max=9 min=1 onchange="validate_cells();">
+            <input id="cell-73" class="cell" type="number" maxlength=1 max=9 min=1 onchange="validate_cells();">
+            <input id="cell-74" class="cell" type="number" maxlength=1 max=9 min=1 onchange="validate_cells();">
+            <input id="cell-75" class="cell" type="number" maxlength=1 max=9 min=1 onchange="validate_cells();">
+            <input id="cell-76" class="cell" type="number" maxlength=1 max=9 min=1 onchange="validate_cells();">
+            <input id="cell-77" class="cell" type="number" maxlength=1 max=9 min=1 onchange="validate_cells();">
+            <input id="cell-78" class="cell" type="number" maxlength=1 max=9 min=1 onchange="validate_cells();">
+            <input id="cell-79" class="cell" type="number" maxlength=1 max=9 min=1 onchange="validate_cells();">
+            <input id="cell-80" class="cell" type="number" maxlength=1 max=9 min=1 onchange="validate_cells();">
+            <br>
+            <div class="button" onclick="solve();">Solve</div>
+            <div class="button" onclick="reset();">Reset</div>
+            <div class="button" onclick="clean();">Clean</div>
+            <p id="status"></p>
+        </div>
+    </div>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            background: #e5e2e4;
+            font-family: 'Pangolin', cursive;
+        }
+        
+        input::-webkit-outer-spin-button,
+        input::-webkit-inner-spin-button {
+            -webkit-appearance: none;
+        }
+        
+        #container {
+            margin: 5px;
+            text-align: center;
+        }
+        
+        .cell {
+            height: 45px;
+            width: 45px;
+            margin: 2px;
+            text-align: center;
+            font-size: 30px;
+            font-weight: bold;
+            border: 2px solid #857f83;
+            color: #000000;
+        }
+        
+        .cell-readonly {
+            background-color: #fff3b1;
+        }
+        
+        .cell-wrong {
+            background-color: #ff5858;
+        }
+        
+        .cell-wrong-border {
+            background-color: #ff0000;
+            border: 2px solid #e70000;
+        }
+        
+        #cell-2,
+        #cell-5,
+        #cell-11,
+        #cell-14,
+        #cell-20,
+        #cell-23,
+        #cell-29,
+        #cell-32,
+        #cell-38,
+        #cell-41,
+        #cell-47,
+        #cell-50,
+        #cell-56,
+        #cell-59,
+        #cell-65,
+        #cell-68,
+        #cell-74,
+        #cell-77 {
+            margin-right: 8px;
+        }
+        
+        #cell-18,
+        #cell-19,
+        #cell-20,
+        #cell-21,
+        #cell-22,
+        #cell-23,
+        #cell-24,
+        #cell-25,
+        #cell-26,
+        #cell-45 {
+            margin-bottom: 8px;
+        }
+        
+        .button {
+            margin-top: 5px;
+            margin-bottom: 10px;
+            margin-left: 25px;
+            padding: 5px 10px;
+            display: inline-block;
+            text-align: center;
+            font-size: 25px;
+            font-weight: bold;
+            letter-spacing: 2px;
+            cursor: pointer;
+            border-radius: 10px;
+            border: 2px solid #a4ada2;
+            color: #3a1f2f;
+            box-shadow: 0 0 7px 0 #bebbbe;
+        }
+        
+        .button:hover {
+            background-color: #ffffff;
+        }
+        
+        #status {
+            font-size: 25px;
+            font-weight: bold;
+            letter-spacing: 2px;
+            color: #04800e;
+        }
+    </style>
+</body>
+
+</html>
